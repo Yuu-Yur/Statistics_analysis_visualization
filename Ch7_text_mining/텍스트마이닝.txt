@@ -1,0 +1,9 @@
+텍스트 마이닝
+
+Okt.morphs 로 토크나이저 만듬
+from konlpy.tag import Okt
+TfidfVectorizer에 토크나이저를 넣고 단어를 벡터화시킴, string 그 자체를 모델에 넣을 순 없으므로 파싱
+from sklearn.feature_extraction.text import TfidfVectorizer
+배운건 감성 분류 , 분류이므로 로지스틱회귀분석모델 사용
+from sklearn.linear_model import LogisticRegression
+그리고 판단하고 마무리

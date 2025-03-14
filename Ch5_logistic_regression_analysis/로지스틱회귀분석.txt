@@ -1,0 +1,18 @@
+로지스틱 회귀분석은 기본적으로 분류
+예측하는 것이 아니라 분류하고 그것이 옳은지 틀린지 정확도에 촛점을 맞춤
+데이터의 단위가 차이가 심하게 날 경우 정규화 필요
+from sklearn.preprocessing import StandardScaler
+아래의 모델로 분석하고 데이터를 나누고 모델을 판단함
+from sklearn.linear_model import LogisticRegression
+
+from sklearn.model_selection import train_test_split
+
+from sklearn.metrics import mean_squared_error, r2_score
+from sklearn.metrics import confusion_matrix, accuracy_score
+from sklearn.metrics import precision_score, recall_score, f1_score, roc_auc_score
+
+결정트리분석
+이 모델을 사용
+from sklearn.tree import DecisionTreeClassifier
+그리드서치로 이 모델을 최적화함, 어느정도 깊이로 분석해야 하는지, 각각에 하이퍼매개변수는 얼마인지
+from sklearn.model_selection import GridSearchCV
